@@ -29,7 +29,7 @@ function isbn_shortcode( $atts ) {
       preg_match('#<h2>(.*?)</h2>#is', $data, $match);
       $title = $match[1];
 
-      $return = '<a href="http://www.amazon.es/s/field-keywords=' . $isbn . '" target="_new"><div class="isbn-image">' . $thumbnail . '</div><div class="isbn-title">' . $title . '</div></a>';
+      $return = '<div class="isbn-block"><a href="http://www.amazon.es/s/field-keywords=' . $isbn . '" target="_new"><div class="isbn-image">' . $thumbnail . '</div><div class="isbn-title">' . $title . '</div></a></div>';
 
     } else {
       // if there is no ISBN, we show a message
