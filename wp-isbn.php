@@ -52,6 +52,9 @@ function isbn_style() {
   max-width: 200%;
   margin-left: 150%;
  }';
+
+ return $css;
+
 }
 
 /**
