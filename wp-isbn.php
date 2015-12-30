@@ -42,23 +42,3 @@ function isbn_shortcode( $atts ) {
 add_shortcode( 'isbn', 'isbn_shortcode' );
 
 
-function isbn_style() {
- $css = '
- div.isbn-block {
-  text-align: center;
- }
-
- .isbn-image img {
-  max-width: 200%;
-  margin-left: 150%;
- }';
-}
-
-/**
- * Proper way to enqueue scripts and styles
- */
-function isbn_scripts() {
-  wp_enqueue_style( 'isbn_style', isbn_style() );
-}
-
-add_action( 'wp_enqueue_scripts', 'isbn_scripts' );
